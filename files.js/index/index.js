@@ -34,19 +34,21 @@ function getItems(){
 }
 
 
-fetch('https://login1form-3fad9-default-rtdb.firebaseio.com/CurrentUser.json').then((res)=>{
-    let data = res.json();
-    return data;
-}).then((res)=>{
-    console.log(res)
-    let userName = document.getElementById('userName');
-    let val;
-    val = `Welcome ${res.name}`;
-    let i=0;
-    setInterval(() => {
-        userName.innerHTML = val.slice(0,i);
-        i++;
-    }, 100);
-}).then((res)=>{
-
-});
+setTimeout(() => {
+    fetch('https://login1form-3fad9-default-rtdb.firebaseio.com/CurrentUser.json').then((res)=>{
+        let data = res.json();
+        return data;
+    }).then((res)=>{
+        console.log(res)
+        let userName = document.getElementById('userName');
+        let val;
+        val = `Welcome ${res.name}`;
+        let i=0;
+        setInterval(() => {
+            userName.innerHTML = val.slice(0,i);
+            i++;
+        }, 100);
+    }).catch((rej)=>{
+        console.log(Error);
+    });
+}, 1000);
