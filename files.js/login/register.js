@@ -136,7 +136,7 @@ fetch('https://login1form-3fad9-default-rtdb.firebaseio.com/user.json').then((re
         if (flage3 == true && flage == false && flage1 == true && namef == true && emailf == true) {
             addData();
             add(fullName.value, password.value, email, Name);
-            open('../../index.html')
+            open('../../files.html/index/index.html')
         }else{
             console.log('hello');
         }
