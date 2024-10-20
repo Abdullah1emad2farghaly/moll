@@ -118,8 +118,8 @@ fetch('https://login1form-3fad9-default-rtdb.firebaseio.com/user.json').then((re
                 }
             }
             if (flage == true) {
-                alert('the email is already exists');
-                nameTest.innerHTML = 'the email is already exists';
+                alert('the userName is already exists');
+                nameTest.innerHTML = 'the userName is already exists';
                 return 0;
             }else{
                 nameTest.innerHTML = '';
