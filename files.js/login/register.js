@@ -118,8 +118,7 @@ fetch('https://login1form-3fad9-default-rtdb.firebaseio.com/user.json').then((re
                 }
             }
             if (flage == true) {
-                alert('the userName is already exists');
-                nameTest.innerHTML = 'the userName is already exists';
+                nameTest.innerHTML = 'Username must be unique.';
                 return 0;
             }else{
                 nameTest.innerHTML = '';
